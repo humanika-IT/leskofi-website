@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
+import { FaInstagram, FaFacebookF, FaYoutube, FaTwitter } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +29,32 @@ export default function Home() {
         </div>
         <div className={styles.content_container}>
           <span className={styles.content_first}>COMING SOON</span>
+        </div>
+        <div className={styles.medsoc_list}>
+          <a
+            className={styles.medsoc_item}
+            href="https://www.instagram.com/leskofi.or/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className={styles.medsoc_icon} />
+          </a>
+          <a
+            className={styles.medsoc_item}
+            href="https://www.facebook.com/leskofi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookF className={styles.medsoc_icon} />
+          </a>
+          <a
+            className={styles.medsoc_item}
+            href="https://twitter.com/leskofi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter className={styles.medsoc_icon} />
+          </a>
         </div>
       </main>
     </>
