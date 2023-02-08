@@ -1,8 +1,37 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  /* background: #e1e1e1; */
+  /* background: linear-gradient(
+    313deg,
+    rgba(51, 43, 21, 0.03609366109725143) 0%,
+    rgba(255, 255, 255, 0.09211607006083689) 49%,
+    rgba(235, 29, 36, 0.04169590199360995) 100%
+  ); */
+}
+
+.logo_container {
+  width: 60vw;
+  max-width: 800px;
+  height: 40vh;
+  position: relative;
+}
+
+.logo_image {
+  object-fit: contain;
+  object-position: center;
+  position: relative;
+}
+
+.content_container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content_first {
+  font-size: 24px;
+  font-weight: 900;
+  color: #332b15;
 }
